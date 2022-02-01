@@ -72,10 +72,15 @@ class ViewMatch:
     result = input("Entrez le resultat du premier joueur:")
     return result #instance de la classe match
 
- def get_match_quart_result(self, player_1, player_2):
-    print(f"le match a lieu entre {player_1.first_name} et {player_2.first_name}")
-    quart_result = input("Entrez le résultat du premier joueur de quart de finale:")
-    return quart_result
+ def get_match_demi_finale_result(self, player_1, player_2):
+    print(f"Le match de demi-finale a lieu entre {player_1} et {player_2}")
+    result = input("Entrez le résultat du premier joueur:")
+    return result
+
+ def get_match_finale_result(self, player_1, player_2):
+    print(f"Le match final a lieu entre {player_1} et {player_2}")
+    result = input("Entrez le résultat du premier joueur:")
+    return result
 
  def create_match(turn,tournament, player_1, player_2):
     players = tournament.players
